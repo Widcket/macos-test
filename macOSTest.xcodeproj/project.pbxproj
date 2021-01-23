@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		5C29746523FF47E900BC18FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29746423FF47E900BC18FA /* ViewController.swift */; };
 		5C29746723FF47EA00BC18FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C29746623FF47EA00BC18FA /* Assets.xcassets */; };
 		5C29746A23FF47EA00BC18FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C29746823FF47EA00BC18FA /* Main.storyboard */; };
+		B544FB4AA65DF35497D8802C /* Pods_macOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D33BB1F92A9CDB749E0E28 /* Pods_macOSTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,9 @@
 		5C29746923FF47EA00BC18FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C29746B23FF47EA00BC18FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C29746C23FF47EA00BC18FA /* macOSTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSTest.entitlements; sourceTree = "<group>"; };
+		72D33BB1F92A9CDB749E0E28 /* Pods_macOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F5F8FD09582C60AF07F769 /* Pods-macOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOSTest.debug.xcconfig"; path = "Target Support Files/Pods-macOSTest/Pods-macOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A3C8C9772BC2E0BAE5AF23CB /* Pods-macOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOSTest.release.xcconfig"; path = "Target Support Files/Pods-macOSTest/Pods-macOSTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B544FB4AA65DF35497D8802C /* Pods_macOSTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,8 @@
 			children = (
 				5C29746123FF47E900BC18FA /* macOSTest */,
 				5C29746023FF47E900BC18FA /* Products */,
+				B82A4163F1247CAB06617529 /* Pods */,
+				64BA30F988C01BD66D590E58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +70,23 @@
 			path = macOSTest;
 			sourceTree = "<group>";
 		};
+		64BA30F988C01BD66D590E58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72D33BB1F92A9CDB749E0E28 /* Pods_macOSTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B82A4163F1247CAB06617529 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1F5F8FD09582C60AF07F769 /* Pods-macOSTest.debug.xcconfig */,
+				A3C8C9772BC2E0BAE5AF23CB /* Pods-macOSTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C29746F23FF47EA00BC18FA /* Build configuration list for PBXNativeTarget "macOSTest" */;
 			buildPhases = (
+				B9BB32B4B3C00198442662EC /* [CP] Check Pods Manifest.lock */,
 				5C29745B23FF47E900BC18FA /* Sources */,
 				5C29745C23FF47E900BC18FA /* Frameworks */,
 				5C29745D23FF47E900BC18FA /* Resources */,
+				084DC310459C4D78B1A56551 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +153,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		084DC310459C4D78B1A56551 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-macOSTest/Pods-macOSTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-macOSTest/Pods-macOSTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-macOSTest/Pods-macOSTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BB32B4B3C00198442662EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-macOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C29745B23FF47E900BC18FA /* Sources */ = {
@@ -267,19 +335,20 @@
 		};
 		5C29747023FF47EA00BC18FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F5F8FD09582C60AF07F769 /* Pods-macOSTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = macOSTest/macOSTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 22U9KJ5PK6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = macOSTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.ritazerrizuela.macOSTest;
+				PRODUCT_BUNDLE_IDENTIFIER = io.frostycube.lock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -287,19 +356,20 @@
 		};
 		5C29747123FF47EA00BC18FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C8C9772BC2E0BAE5AF23CB /* Pods-macOSTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = macOSTest/macOSTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 22U9KJ5PK6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = macOSTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.ritazerrizuela.macOSTest;
+				PRODUCT_BUNDLE_IDENTIFIER = io.frostycube.lock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
